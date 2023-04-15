@@ -192,6 +192,9 @@ body {
   position: fixed;
   bottom: 20px;
 }
+strong {
+  font-size: 14px;
+}
 @media (max-width:768px) {
   .gpt-propmt {
     flex-direction: column;
@@ -208,5 +211,12 @@ body {
   }
   .results-right {
     width: inherit;
+  }
+  .results-left {
+    min-height: 200px;
+  }
+  .res-block-p {
+    overflow-y: scroll;
+    max-height: 300px;
   }
 }
