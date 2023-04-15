@@ -168,3 +168,26 @@ body {
   padding: 0 20px;
   font-size: 20px;
 }
+#gpt-input{
+  flex: 1 1 0%;
+  font-size: clamp(0.8rem, 1.5rem, 2em);
+  margin-right: 1rem;
+}
+.res-block-p {
+  font-size: 1.5rem;
+}
+.about {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 100px;
+}
+.disclaimer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  bottom: 20px;
+}

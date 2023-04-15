@@ -58,8 +58,10 @@ function App() {
           <div className="loader"></div> 
         </div>
       <form className="app-form">
+      <p>Sample doc URL (See more in readme) <br/> 
+      https://ea-hackathon-23.vercel.app/files/ARH1000.pdf</p>
         <h1 style={{ textDecoration: "underline" }}>Syllabus Dissector</h1>
-        <p>Enter the url to your syllabus below</p>
+        <p>Enter the url to your syllabus below (files coming soon)</p>
         <input type="text" id="test-url" placeholder="URL"/>
         <p id="error-msg"></p>
 
