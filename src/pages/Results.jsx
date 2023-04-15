@@ -37,7 +37,8 @@ const Results = () => {
 
   return (
     <div className="results">
-      <div className="results-left">
+      {results.length > 0 && 
+        <div className="results-left">
         {resultInfo.map((item,idx) => {
           return (  
            <div className="card" key={idx}>
@@ -47,6 +48,7 @@ const Results = () => {
           )
         })}
       </div>
+      }
       <div className="results-right">
         <form onSubmit={e => handleSubmit(e)} className="gpt-propmt">
           {/* <input type="textarea" id="gpt-input" placeholder="prompt?..."/> */}

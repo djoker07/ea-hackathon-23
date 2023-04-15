@@ -164,7 +164,7 @@ body {
   justify-content: space-around;
 }
 
-.btn-prompt {
+#btn-prompt {
   padding: 0 20px;
   font-size: 20px;
 }
