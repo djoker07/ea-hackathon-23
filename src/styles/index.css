@@ -192,3 +192,21 @@ body {
   position: fixed;
   bottom: 20px;
 }
+@media (max-width:768px) {
+  .gpt-propmt {
+    flex-direction: column;
+  }
+  #gpt-input {
+    margin-right: 0;
+  }
+  #btn-prompt {
+    margin-top: 20px
+  }
+  .about-text {
+    max-height: 250px;
+    overflow-y: scroll;
+  }
+  .results-right {
+    width: inherit;
+  }
+}
