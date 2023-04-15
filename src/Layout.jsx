@@ -5,14 +5,14 @@ import Results from "./pages/Results";
 
 const Layout = () => {
     return (
-        <div>
+        <>
             <BrowserRouter>
                 <Routes>
                     <Route element={<App />} path="/" />
                     <Route element={<Results />} path="/results" />
                 </Routes>
             </BrowserRouter>
-        </div>
+        </>
     );
 };
 

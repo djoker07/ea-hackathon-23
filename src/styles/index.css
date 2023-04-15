@@ -80,3 +80,9 @@ body {
   object-fit: cover;
   border-radius: 5px;
 }
+#test-url {
+  width: -moz-available;
+  margin: 10px 16px;
+  font-size: 18px;
+  padding: 10px;
+}
