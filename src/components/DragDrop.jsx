@@ -16,7 +16,7 @@ const DragDrop = () => {
   
       input.addEventListener("change", () => {
       file = input.files[0];
-      console.log(file)
+      console.log(file.value)
       dropArea.classList.add("active");
       });
   

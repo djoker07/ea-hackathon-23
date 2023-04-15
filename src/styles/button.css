@@ -15,8 +15,8 @@
     background: var(--clr);
     color: var(--clr);
     /* letter-spacing:0.25em; */
-    box-shadow:0 0 35px var(--clr) ;
-
+    box-shadow:0 0 25px var(--clr) ;
+    cursor: pointer;
 }
 .btn:before{
 content: '';
