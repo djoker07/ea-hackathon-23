@@ -40,16 +40,6 @@ const Results = () => {
       {arr.map((res, i) => {return <p className="res-block-p" key={i}> {res} </p> } ) }
     </div>
   }
-
-  
-  // enter on textarea calles btn
-  // let userInput = document.getElementById('gpt-input')
-  // userInput.addEventListener("keypress", (e) => {
-  //   if (e.key === "Enter") {
-  //     e.preventDefault();
-  //     document.getElementById("btn-prompt").click();
-  //   }
-  // })
   
   return (
     <div className="results">

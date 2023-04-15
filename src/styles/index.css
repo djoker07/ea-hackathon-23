@@ -124,7 +124,7 @@ body {
 .results-right {
   flex-grow: 1;
   padding: 50px;
-  /* height: 100%; */
+  max-width: 500px;
 }
 @media (max-width:991px) {
   .results {

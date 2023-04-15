@@ -19,14 +19,20 @@ async function main(url) {
     new AzureKeyCredential(key)
   );
 
-  const poller = await client.beginAnalyzeDocumentFromUrl(
-    "prebuilt-document",
-    formUrl
-  );
+  try {
+    const poller = await client.beginAnalyzeDocumentFromUrl(
+      "prebuilt-document",
+      formUrl
+    );
 
-  const { keyValuePairs } = await poller.pollUntilDone();
+    const { keyValuePairs } = await poller.pollUntilDone();
+    return keyValuePairs;
 
-  return keyValuePairs;
+  } catch (error) {
+    console.log(error)
+    return null
+  }
+
 }
 
 function App() {
@@ -46,6 +52,12 @@ function App() {
     loader.classList.remove('off')
     // console.log(file.files)
     let keyValuePairs = await main(url.value);
+
+    if (!keyValuePairs) {
+      loader.classList.add('off')
+      document.getElementById('error-msg').innerHTML = "Invalid URL"
+      return;
+    }
 
     results.actions.setSyllabusResults(keyValuePairs)
     loader.classList.add('off')
