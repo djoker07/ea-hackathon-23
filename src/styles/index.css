@@ -182,6 +182,7 @@ body {
   align-items: center;
   justify-content: center;
   padding: 100px;
+  max-width: 800px;
 }
 .disclaimer {
   display: flex;
